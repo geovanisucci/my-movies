@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { Home } from "./views/Home";
 import { About } from "./views/About";
+import { MovieDetail } from "./views/MovieDetail";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/movie/:id">
+            <MovieDetail />
           </Route>
           <Route path="/">
             <Home />
